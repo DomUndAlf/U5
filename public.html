@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linoldruck - eine alte Technik</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+
+<nav class="row" style="margin: auto;">
+<button class="col" id="headerbuttons" input type="button" onClick="document.getElementById('history').scrollIntoView();">Geschichte</button> 
+<button class="col" id="headerbuttons" input type="button" onClick="document.getElementById('material').scrollIntoView();">Materialien</button> 
+<button class="col" id="headerbuttons" input type="button" onClick="document.getElementById('color').scrollIntoView();">Farben</button> 
+<button class="col" id="headerbuttons" input type="button" onClick="document.getElementById('press').scrollIntoView();">Druckerpressen</button> 
+<button class="col" id="headerbuttons" input type="button" onClick="document.getElementById('process').scrollIntoView();">Druckprozess</button> 
+<button class="col" id="headerbuttons" input type="button" onClick="document.getElementById('evaluation').scrollIntoView();">Evaluation</button>
+</nav>
+
+
+
+
+<header id="graph-paper">
+    <img src="pics\Schriftzug.png" id="headline" class="flashingPolygon">
+</header>    
+
+<div class="breaking-news-bar" id="breaking-news-bar">
+    <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+      <span id="breaking-news-text">#linoldruck #linocut #linoprint #linolschnitt #printmaking #linogravure #linoleumprint #art #print #printmaker #linocutprint #lino #printmakersofinstagram #reliefprint #linograbado #linoleum #handprinted #blockprint #linoprinting #imprinted #blockprinting #linocutting #get #handmade #druckgrafik #illustration #justprintmaking #handcarved #linografia #kunst</span>
+    </marquee>
+  </div>
+
+<section id="history">
+    <div class="stripe"> </div>
+    <h1>Die Geschichte</h1>
+
+    <div class="card-group">
+      <div class="card">
+        <img class="card-img-top" src="pics\antik.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Der Ursprung</h5>
+          <p class="card-text">Bereits aus der Antike sind Stempel erhalten. Diese wurden vornehmlich zum prägen von Materialien genutzt und weniger zum Bedrucken von Oberflächen.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="pics\gutenberg.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Hochzeit</h5>
+          <p class="card-text">Mit der Erfindung des Buchdrucks im 17. Jh. erlebt der Hochdruck seine goldene Ära. Hier zu sehen ist die klassische Gutenbergpresse.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="pics\offset.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Morderner Druck</h5>
+          <p class="card-text">Druckverfahren wie Laser- und Tintenstrahldruck haben andere Methoden heute völlig aus der Druckindustrie vertrieben.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="graph-paper2">
+      <div class="row" id="allp" style=" margin-bottom: unset; width: 90%; margin-bottom: 2%;">
+        <img class="col-7" src="pics\6_mirage-4.jpg" alt="Card image cap" id="chris">
+        <div class="col-5"> 
+          <h5> Hochdruck heute</h5>
+          <p class="card-text"> Seit der Erfindung diverser digitaler Druckverfahren finden analoge Drucktechniken wie Holz- und Siebdruck, Lithografie oder Radierung fast nur noch im künstlerischen Bereich Anwendung. Ein meisterhaftes Beispiel für einen Linoldruck ist "Mirage 4" des polnischen Künstlers Karol Pomykala. </p>
+      </div>
+      </div>
+    </div>
+</section>
+
+<section id="material">
+  <div class="stripe"> </div>
+
+  <h1> Was man so an Material braucht</h1>
+  <div class="row">
+      <div class="col" id="cola">
+          <img class="stars" src="pics\linol.png">
+          <h5>Künstlerlinoleum</h5>
+          <p id="smallp">Das Trägermaterial, in das das Motiv geschnitten wird. Es besteht aus natürlichen Stoffen wie Leinöl und Holzpulver. </p>
+      </div>  
+
+      <div class="col" id="cola">
+          <img class="stars" src="pics\walze.png">
+          <h5>Farbwalze</h5>
+          <p id="smallp">Hiermit wird die Farbe erst auf einem glatten Untergrund ausgerollt und dann gleichmäßig auf der Linolplatte vertteilt.</p>
+      </div>   
+
+      <div class="col" id="cola">
+          <img class="stars" src="pics\presse.png">
+          <h5>Handpresse</h5>
+          <p id="smallp">Für den Gebrauch zuhause. Man kann den Druck jedoch auch mit der Rückseinte eines Löffels abreiben, allerdings ist dies viel anstrengender. </p>
+      </div>  
+          
+
+      <div class="col" id="cola">
+          <img class="stars" src="pics\Brocken.png">
+          <h5>Schleifstein</h5>
+          <p id="smallp">Scharfes Werkzeug ist wichtig um effizient und sicher arbeiten zu können. Mit etwas Wasser kann das Werkzeug mit dem Schleifstein scharf gehalten werden.  </p>
+      </div>  
+        
+          
+      <div class="col" id="cola">
+          <img class="stars" src="pics\pfeilt.png">
+          <h5>Hohleisen</h5>
+          <p id="smallp">Die Messer, die zum Schneiden ins Linoleum verwendet werden. Es gibt sie in mehreren Ausführungen und Formen, um präzise Muster herausarbeiten zu können. </p>
+      </div>  
+  </div>
+</section>
+
+<section id="color">
+  <div class="stripe"> </div>
+
+  <h1> Die klassische Farbpalette</h1>
+
+  <div class="row">
+    <p class="dotted-div" id="swipep">Grundsätzlich sollte man sich beim Linoldruck erstmal die Frage stellen, ob man mit ölbasierten, oder wasserbasierten Farben drucken möchte. Beide haben ihre Vorteile, für den professionellen Gebrauch sind jedoch eher ölbasierte Farben zu gebrauchen. </p>
+    <div class="row" id="add">
+        <p class="col pinfo"><b>Ölbasiert</b><br>- benötigen ein Lösungsmittel, ist also nicht für den Gebrauch zuhause geeignet<br>- ebenmäßigeres Druckbild<br>- Flecken sind nicht auswaschbar</b></p>
+        <p class="col pinfo"><b>Wasserbasiert</b><br>- umweltfreundlich<br>- leicht auswaschbar<br>- trocken sehr schnell, ggf. zu schnell<br>- kein ebenmäßiges Druckbild </p>    
+  </div>
+  </div>
+
+  <div id="graph-paper2">
+    <div class="row">
+    <div class="col" id="colors">
+      <img src="pics\kaltgelb.jpg">
+      <p><b>Kaltgelb</b><br>#f8f32b</p>
+    </div>
+    <div class="col"id="colors">
+      <img src="pics\warmgelb.jpg">
+      <p><b>Warmgelb</b><br>#efb100</p>
+    </div>
+    <div class="col"id="colors">
+      <img src="pics\primärgelb.jpg">
+      <p><b>Primärgelb</b><br>#ffff00</p>
+    </div>
+    <div class="col"id="colors">
+      <img src="pics\hellorange.jpg">
+      <p><b>Hellorange</b><br>#ff9c1c</p>
+    </div>
+    <div class="col"id="colors">
+      <img src="pics\magenta.jpg">
+      <p><b>Magente</b><br>#f653a6</p>
+    </div>
+    <div class="col"id="colors">
+      <img src="pics\rubinrot.jpg">
+      <p><b>Rubinrot</b><br>#8d1d2c</p>
+    </div>
+    <div class="col"id="colors">
+      <img src="pics\Naptholrot.jpg">
+      <p><b>Naptholorot</b><br>#da234a</p>
+    </div>
+    <div class="col"id="colors">
+      <img src="pics\Carbazole+Violett.jpg">
+      <p><b>Carbazole Violett</b><br>#8f00ff</p>
+    </div>
+    <div class="col"id="colors">
+      <img src="pics\cyan.jpg">
+      <p><b>Cyanblau</b><br>#2faaff</p>
+    </div>
+    <div class="col"id="colors">
+      <img src="pics\phtla.jpg">
+      <p><b>Phthaloblau</b><br>#000F89</p>
+    </div>
+    <div class="col"id="colors">
+      <img src="pics\Phthalogrün.jpg">
+      <p><b>Phthalogrün</b><br>#123524</p>
+    </div>
+    <div class="col"id="colors">
+      <img src="pics\Gelbocker.jpg">
+      <p><b>Gelbocker</b><br>#b89c50</p>
+    </div>
+    <div class="col"id="colors">
+      <img src="pics\Sienna+gebrannt.jpg">
+      <p><b>Sienna gebrannt</b><br>#531e1b</p>
+    </div>
+    <div class="col"id="colors">
+      <img src="pics\Umber+natur.jpg">
+      <p><b>Umbra natur</b><br>#73542f</p>
+    </div>
+    <div class="col"id="colors">
+      <img src="pics\Schwarz.jpg">
+      <p><b>Schwarz</b><br>#000000</p>
+    </div>
+    <div class="col"id="colors">
+      <img src="pics\Deckweiß.jpg">
+      <p><b>Deckweiß</b><br>#ffffff</p>
+    </div>
+    <div class="col"id="colors">
+      <img src="pics\Transparent+Extender.jpg">
+      <p><b>Extender</b><br>pigmentlos</p>
+    </div>
+  </div>
+  </div>
+
+</section>
+
+<section id="press">
+  <div class="stripe"> </div>
+
+  <h1>Verschiedene Druckerpressen</h1>
+
+  <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item">
+        <img src="pics\Buchdruckpresse.jpg" id ="swipepic" class="d-block w-100" alt="Spindelpresse">
+          <p class="dotted-div" id="swipep"> <b>Eine Spindelpresse</b><br>auch Buchdruckpresse genannt. Der Druck wird bei dieser Presse durch das Absenken der Druckplatte mittels der beiden Griffe am Kopfteil der Presse erzieht. Da man sich hier durch das Gewinde die Kraft der Reibung zunutze machen kann, ist diese Presse trotz Handbetrieb zu einem enormen Druckaufbau geeignet. Durch die etwas umständliche Art der Druckerzeugung ist sie jedoch eher für Prägungen, als zum Hoch- und Tiefdruck geeignet</p>
+        </div>
+        <div class="carousel-item">
+          <img src="pics\Tiefdruckpresse.jpg" id ="swipepic" class="d-block w-100" alt="Tiefdruckpresse">
+          <p class="dotted-div" id="swipep"> <b>Eine (kleine) Tiefdruckpresse</b><br>Diese ist - wie der Name vermuten lässt - vornehmlich für Tiefdruck gedacht, beispielsweise die Radierung, und arbeitet mit einem entsprechend hohen Druck. Dieser lässt sich jedoch präzise regulieren, weshalb auch Hochdrucktechniken mit einer Tiefdruckpresse ausgeführt werden können. Diese Pressen gibt es sowohl für den Handbetrieb, als auch motorisiert.</p>
+        </div>
+        <div class="carousel-item active">
+          <img src="pics\Kniehebelpresse.jpg" id ="swipepic" class="d-block w-100" alt="Kniehebelpresse">
+          
+          <svg class="starsvg"
+          width="15%"
+          viewBox="0 0 105 148"
+          version="1.1"
+          id="svg1"
+          inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+          sodipodi:docname="Sterne.svg"
+          inkscape:export-filename="Sterne.png"
+          inkscape:export-xdpi="96.036186"
+          inkscape:export-ydpi="96.036186"
+          xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+          xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:svg="http://www.w3.org/2000/svg">
+        <sodipodi:namedview
+            id="namedview1"
+            pagecolor="#ffffff"
+            bordercolor="#000000"
+            borderopacity="0.25"
+            inkscape:showpageshadow="2"
+            inkscape:pageopacity="0.0"
+            inkscape:pagecheckerboard="0"
+            inkscape:deskcolor="#d1d1d1"
+            inkscape:document-units="mm"
+            inkscape:zoom="1.1635133"
+            inkscape:cx="440.04654"
+            inkscape:cy="186.07437"
+            inkscape:window-width="2160"
+            inkscape:window-height="1334"
+            inkscape:window-x="-11"
+            inkscape:window-y="1609"
+            inkscape:window-maximized="1"
+            inkscape:current-layer="layer1" />
+        <defs
+            id="defs1">
+          <rect
+              x="247.34779"
+              y="397.15427"
+              width="244.00526"
+              height="124.28163"
+              id="rect1" />
+        </defs>
+        <g
+            inkscape:label="Ebene 1"
+            inkscape:groupmode="layer"
+            id="layer1">
+          <g
+              id="g1"
+              transform="matrix(1.1505384,0,0,1.1505384,-57.021393,-83.66173)">
+            <path
+                sodipodi:type="star"
+                style="fill:#1C8A8D;stroke-width:3.62;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4.8;paint-order:fill markers stroke"
+                id="path1"
+                inkscape:flatsided="false"
+                sodipodi:sides="16"
+                sodipodi:cx="43.415009"
+                sodipodi:cy="101.94487"
+                sodipodi:r1="45.916851"
+                sodipodi:r2="32.600964"
+                sodipodi:arg1="0.50437742"
+                sodipodi:arg2="0.70072696"
+                inkscape:rounded="0"
+                inkscape:randomized="0"
+                d="m 83.614087,124.13476 -15.27976,-1.16965 3.728084,14.86407 -13.669052,-6.92793 -2.243932,15.15928 -9.977353,-11.63149 -7.87433,13.14664 -4.766693,-14.56427 -12.305934,9.13254 L 22.39477,126.86419 7.5307007,130.59227 14.45863,116.92322 -0.70065527,114.67929 10.930837,104.70194 -2.2158013,96.827605 12.348464,92.060912 3.2159298,79.754979 l 15.2797612,1.169653 -3.728085,-14.86407 13.669052,6.92793 2.243932,-15.159286 9.977353,11.631492 7.874331,-13.146638 4.766692,14.564265 12.305934,-9.132534 -1.169653,15.279761 14.864069,-3.728084 -6.927929,13.669051 15.159285,2.243932 -11.631492,9.977353 13.146638,7.874326 -14.564265,4.7667 z"
+                inkscape:transform-center-x="0.15325022"
+                inkscape:transform-center-y="-1.2333866"
+                transform="translate(51.776417,16.401225)" />
+            <text
+                xml:space="preserve"
+                transform="matrix(0.25104636,0,0,0.26458333,3.4068533,1.9712627)"
+                id="text1"
+                style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.6667px;line-height:1.2;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;white-space:pre;shape-inside:url(#rect1);display:inline;fill:#ffffff;stroke-width:13.6819;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4.8;paint-order:fill markers stroke"><tspan
+                  x="265.35039"
+                  y="419.82099"
+                  id="tspan2">Der Klassiker&#10;</tspan><tspan
+                  x="289.35043"
+                  y="451.82102"
+                  id="tspan3">unter den &#10;</tspan><tspan
+                  x="249.35036"
+                  y="483.82105"
+                  id="tspan4">Druckerpressen!</tspan></text>
+          </g>
+        </g>
+      </svg>
+
+          <p class="dotted-div" id="swipep"> <b>Eine alte Kniehebelpresse</b><br>hier zum Bleisatz verwendet. Der Druckstock wird auf die Unterlage gelegt, manuell unter die Druckplatte gefahren und schließlich der namensgebende Kniehebel gezogen. Der Druck ist einstellbar und kann der Dicke und Beschaffenheit des Druckstocks angepasst werden. Für Tiefdruck sind diese Pressen allerdings nicht geeignet, da der Druckaufbau zu gering ist. </p>
+        </div>
+        <div class="carousel-item">
+          <img src="pics\Handdruckpresse.jpg" id ="swipepic"class="d-block w-100" alt="Handdruckpresse">
+          <svg class="starsvg2"
+          width="15%"
+          viewBox="0 0 105 148"
+          version="1.1"
+          id="svg1"
+          inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+          sodipodi:docname="Sterne.svg"
+          inkscape:export-filename="Sterne.png"
+          inkscape:export-xdpi="96.036186"
+          inkscape:export-ydpi="96.036186"
+          xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+          xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:svg="http://www.w3.org/2000/svg">
+        <sodipodi:namedview
+            id="namedview1"
+            pagecolor="#ffffff"
+            bordercolor="#000000"
+            borderopacity="0.25"
+            inkscape:showpageshadow="2"
+            inkscape:pageopacity="0.0"
+            inkscape:pagecheckerboard="0"
+            inkscape:deskcolor="#d1d1d1"
+            inkscape:document-units="mm"
+            inkscape:zoom="1.1635133"
+            inkscape:cx="440.04654"
+            inkscape:cy="186.07437"
+            inkscape:window-width="2160"
+            inkscape:window-height="1334"
+            inkscape:window-x="-11"
+            inkscape:window-y="1609"
+            inkscape:window-maximized="1"
+            inkscape:current-layer="layer1" />
+        <defs
+            id="defs1">
+          <rect
+              x="247.34779"
+              y="397.15427"
+              width="244.00526"
+              height="124.28163"
+              id="rect1" />
+        </defs>
+        <g
+            inkscape:label="Ebene 1"
+            inkscape:groupmode="layer"
+            id="layer1">
+          <g
+              id="g1"
+              transform="matrix(1.1505384,0,0,1.1505384,-57.021393,-83.66173)">
+            <path
+                sodipodi:type="star"
+                style="fill:#FFA3E7;stroke-width:3.62;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4.8;paint-order:fill markers stroke"
+                id="path1"
+                inkscape:flatsided="false"
+                sodipodi:sides="16"
+                sodipodi:cx="43.415009"
+                sodipodi:cy="101.94487"
+                sodipodi:r1="45.916851"
+                sodipodi:r2="32.600964"
+                sodipodi:arg1="0.50437742"
+                sodipodi:arg2="0.70072696"
+                inkscape:rounded="0"
+                inkscape:randomized="0"
+                d="m 83.614087,124.13476 -15.27976,-1.16965 3.728084,14.86407 -13.669052,-6.92793 -2.243932,15.15928 -9.977353,-11.63149 -7.87433,13.14664 -4.766693,-14.56427 -12.305934,9.13254 L 22.39477,126.86419 7.5307007,130.59227 14.45863,116.92322 -0.70065527,114.67929 10.930837,104.70194 -2.2158013,96.827605 12.348464,92.060912 3.2159298,79.754979 l 15.2797612,1.169653 -3.728085,-14.86407 13.669052,6.92793 2.243932,-15.159286 9.977353,11.631492 7.874331,-13.146638 4.766692,14.564265 12.305934,-9.132534 -1.169653,15.279761 14.864069,-3.728084 -6.927929,13.669051 15.159285,2.243932 -11.631492,9.977353 13.146638,7.874326 -14.564265,4.7667 z"
+                inkscape:transform-center-x="0.15325022"
+                inkscape:transform-center-y="-1.2333866"
+                transform="translate(51.776417,16.401225)" />
+            <text
+                xml:space="preserve"
+                transform="matrix(0.25104636,0,0,0.26458333,3.4068533,1.9712627)"
+                id="text1"
+                style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.6667px;line-height:1.2;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;white-space:pre;shape-inside:url(#rect1);display:inline;fill:#ffffff;stroke-width:13.6819;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4.8;paint-order:fill markers stroke"><tspan
+                  x="265.35039"
+                  y="419.82099"
+                  id="tspan2">Die Version</tspan><tspan
+                  x="289.35043"
+                  y="451.82102"
+                  id="tspan3">für Zuhause</tspan>
+          </g>
+        </g>
+      </svg>
+          <p  class="dotted-div" id="swipep"> <b>Eine Handdruckpresse</b><br> für den Gebrauch Zuhause. Der auswirkbare Druck beschränkt sich hier völlig auf die Muskelkraft des/der Nutzenden und ist nicht auf einen kosntanten Wert einstellbar. Folglich ist diese Art der Presse eher für den Hobbygebrauch geeignet und liefert meist ein ungleichmäßiges Druckbild, das jedoch auch seinen Reiz haben kann </p>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+</section>
+
+<section id="process">
+<div class="stripe"> </div>
+
+<h1> Der Druckprozess </h1>
+
+<div class="container-fluid">
+    <div class="row" id="graph-paper2"style="padding-left:5%;">
+      
+            <blockquote class="instagram-media col" data-instgrm-permalink="https://www.instagram.com/p/B73xIfSAArO/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/B73xIfSAArO/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Sieh dir diesen Beitrag auf Instagram an</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/B73xIfSAArO/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Ein Beitrag geteilt von Dominique (@printsbydominique)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+        <div  class="col">
+           <p class= "row" id="allp" style="margin:5%">Wie der Ablauf beim Druck in einem professionellen Studio ist, sieht man hier.
+            Zuerst wird die Farbe mit einer passend großen Walze ausgerollt. Diese sollte in etwa so breit sein wie der Druckstock, damit keine ungewollten Linien im Druck zu sehen sind. Man muss außerdem auf die richtige Farbmenge achten, denn bei zu viel davon gelangt diese in die feinen Schnitte des Druckstocks und der Druck wird unsauber. Nimmt man zu wenig, wird der Druck fleckig.
+            Danach wird mit derselben Walze der Druckstock eingewalzt bis die Farbe gleichmäßig darauf verteilt ist. 
+            <br> <br>
+            Der Druckstock wird auf der Presse platziert und der Druck je nach Größe und Verhältnis der abzudruckenden Flächen präzise eingestellt.
+            <br><br>
+            Schließlich wird der Druckstock mit dem Papier durch die Presse gefahren und das Motiv so abgedruckt. Nun muss es nur noch etwa 24h Stunden trocken.
+            </p> 
+
+            <p class="row" id="allp" style="margin:5%">
+              Dieses Video ist in der offenen Grafikdruckwerkstatt im Werk2 in Leipzig entstanden. Man kann grundsätzlich aber auch ohne professionelles Studio, und sogar ohne Presse drucken.
+            </p>
+            
+        </div>
+    </div>    
+  </section>
+
+
+<div class="stripe">
+</div>
+
+<h1>Eine kleine Anleitung</h1>
+<p class="pinfo"> Hat man alle Materialien und Werkzeuge zusammen, kann man direkt loslegen. Wichtig ist, sich bei jedem Schritt Zeit zu lassen und konzentriert zu arbeiten. Der Druckprozess ist fehleranfällig, mitunter sogar gefährlich. Eine kleine Ungenauigkeit kann das ganze Endergebnis ruinieren, oder entscheidend in seiner Qualität verringern.
+  Denkbar sind zum Beispiel Farbflecken von ungewaschenen Fingern, oder Knicke und Risse im Papier. Auch bei der Anfertigung von Hilfsmaterialien wie der Anlage muss sich konzentriert werden, denn ist die Anlage nicht stabil genug, oder schief, passen die Schichten des Drucks nicht richtig aufeinander.
+Oder man rammt sich eines der scharfen Hohleisen in die Hand oder quetscht sich die Finger in der Presse.</p>
+
+<div class="row" id="adjust">
+  <div data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4" id="time">
+    
+    <p id="timeinfo"><b> 1. Schritt:</b><br>Motiv auf Linoleum übertragen<br></p>
+    <a href="pics\ausschneiden.jpg" >
+      <img src="pics\motivwählen.jpg" class="img-fluid" >  
+    </a>
+  </div>
+
+  <div data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4" id="time">
+    <p id="timeinfo"><b> 2. Schritt:</b><br>Motiv herausschneiden</p>
+    <a href="pics\ausschneiden.jpg" >
+      <img src="pics\ausschneiden.jpg" class="img-fluid" >
+    </a>
+  </div>
+
+  <div data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4" id="time">
+    <p id="timeinfo"><b> 3. Schritt: </b><br>Anlage erstellen, damit das Motiv gut auf dem Papier platziert ist</p>
+    <a href="pics\Anlage.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+      <img src="pics\Anlage.jpg" class="img-fluid">
+    </a>
+  </div>
+
+</div>
+<div class="row">
+<div data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4" id="time">
+  
+  <p id="timeinfo"><b> 4. Schritt:</b><br>Farbe auswalzen<br>(klick für ein Video)</p>
+	<a href="https://www.instagram.com/reel/COx8qYOCEeb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
+		<img src="pics\auswalzen.jpg" class="img-fluid" >
+	</a>
+
+</div>
+
+<div data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4" id="time">
+  <p id="timeinfo"><b> 5. Schritt:</b><br>Linolplatte mit Farbe einwalzen
+  </p>
+	<a href="pics\eingewalzt.jpg">
+		<img src="pics\eingewalzt.jpg" class="img-fluid" >
+	</a>
+</div>
+
+<div data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4" id="time">
+  <p id="timeinfo"><b> 6. Schritt:</b><br>abdrucken und fertig :)<br>(klick für ein Video)</p>
+	<a href="https://www.instagram.com/p/CBL2Nx5Alck/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
+		<img src="pics\fertig.jpg" class="img-fluid">
+	</a>
+</div>
+
+</div>
+
+<section id="evaluation">
+  <div class="stripe">
+  </div>
+  <h1> Evaluation</h1>
+
+  <div id="buttoncenter">
+  <button class="dotted-div" id="evabutton" input type="button" onClick="changeDisplay()"> klick mich baby</button> 
+  <div class="dotted-div" id="eva"> 
+    <li>1</li>
+    <li>1</li>
+    <li>1</li>
+    <li>1</li>
+    <li>1</li>
+    <li>1</li>
+    <li>1</li>
+    <li>1</li>
+    <li>1</li>
+  </div>
+</div>
+
+
+
+</section>
+
+<footer class="text-center bg-body-tertiary">
+  <!-- Copyright -->
+  <div class="text-center p-2" style="background-color: #BA8BFF;">
+   <p style="color: white;"> © 2023 Dominique Fischer </p>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<script src="home.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
